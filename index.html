@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="icon" href="/push-box/assets/box-DPhuFDni.png">
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover" />
   <title>推箱子</title>
@@ -14,5 +13,17 @@
 <body>
   <div id="app"></div>
 </body>
+
+<script>
+  import iconUrl from '@/assets/images/icons/box.png?inline'
+
+  // 动态创建 <link> 标签
+  const link = document.createElement('link')
+  link.rel = 'icon'
+  link.href = iconUrl
+
+  // 添加到 <head>
+  document.head.appendChild(link)
+</script>
 
 </html>
